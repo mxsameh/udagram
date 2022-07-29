@@ -3,10 +3,10 @@ import { config } from "./config/config";
 
 
 export const sequelize = new Sequelize({
-  username: "postgres",
-  password: "postgres",
-  database: "postgres",
-  host: "udagram.cusavsh2tlx7.us-east-1.rds.amazonaws.com",
+  username:config.username,
+  password: config.password,
+  database: config.database,
+  host: config.host,
 
   dialect: "postgres",
   storage: ":memory:",
