@@ -14,5 +14,14 @@
 
 ![circleci pipeline](./screenshots/Screenshot%20from%202022-07-29%2022-01-11.png)
 
+<br>
+3- we added env variables to be added to the eb environment
+
+![circleci pipeline](./screenshots/Screenshot%20from%202022-07-31%2012-59-23.png)
+
+<br>
+
+
+![circleci pipeline](./screenshots/Screenshot%20from%202022-07-31%2012-58-02.png)
 
 <br>
