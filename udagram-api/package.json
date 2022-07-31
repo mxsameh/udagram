@@ -14,7 +14,8 @@
     "clean": "rm -rf www/ || true",
     "deploy": "npm run build && eb use udagram-api-env --profile default && eb deploy --profile default",
     "build": "npm install . && npm run clean && tsc && cp -R .elasticbeanstalk www/.elasticbeanstalk && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
-    "eb-env":"eb setenv POSTGRES_USERNAME=postgres POSTGRES_PASSSWORD=postgres POSTGRES_DB=postgres POSTGRES_PORT=5432 PORT=3000 URL=http://mohamddsameh.s3-website-us-east-1.amazonaws.com POSTGRES_HOST=udagram.cusavsh2tlx7.us-east-1.rds.amazonaws.com AWS_REGION='' AWS_PROFILE='' AWS_BUCKET='' JWT_SECRET='this-phrase-is-secret' --profile default",
+    "eb-env":"eb setenv POSTGRES_USERNAME=$POSTGRES_USERNAME POSTGRES_PASSSWORD=$POSTGRES_PASSSWORD POSTGRES_DB=$POSTGRES_DB POSTGRES_PORT=$POSTGRES_PORT PORT=$PORT URL=$URL POSTGRES_HOST=$POSTGRES_HOST JWT_SECRET=$JWT_SECRET --profile default",
+
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
